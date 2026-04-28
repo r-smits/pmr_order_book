@@ -1,7 +1,9 @@
 Purpose of project
 
-Learning about polymorphic memory resource to create an arena allocator.
-Allocation at beginning of lifetime of a program should be faster than allocation with default allocator.
+Order book backed by polymorphic memory resource used to create an arena allocator.
+This is a monotonic allocator meaning it can only be deallocated in its entirety.
+
+However, a single allocation at beginning of lifetime of a program should be faster than allocation with default allocator.
 Therefore we should be able to benchmark this and notice the difference in latency.
 This repository is meant to test this.
 
